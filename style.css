@@ -21,7 +21,7 @@ nav {
   z-index: 100;
 }
 
-.nav-body{
+.nav-body {
   background-color: rgba(0, 0, 0, 0.612);
   position: absolute;
   right: 100px;
@@ -93,13 +93,13 @@ nav a {
   gap: 5px;
 }
 .skill {
-  width: 18ch;
+  width: 30ch;
   color: orangered;
   white-space: nowrap;
   overflow: hidden;
   border-right: 4px solid black;
   animation: cursor 1s step-start infinite,
-    texts 5s steps(18) alternate infinite;
+    texts 5s steps(30) alternate infinite;
 }
 
 .home p,
@@ -135,7 +135,7 @@ table td,
 
 /* Profile image */
 
-figure{
+figure {
   align-self: center;
   color: orangered;
 }
@@ -143,7 +143,7 @@ figure{
 .wave {
   float: left;
   margin: 40px;
-  animation: wave  ease-in-out 0.5s infinite alternate;
+  animation: wave ease-in-out 0.5s infinite alternate;
   transform-origin: center -36px;
 }
 
@@ -163,21 +163,21 @@ figure{
   text-align: center;
 }
 
-.wave:after{
-  content: '';
+.wave:after {
+  content: "";
   position: absolute;
-  width: 20px; 
+  width: 20px;
   height: 20px;
   border: 1.5px solid #ffffff;
-  top: -10px; 
+  top: -10px;
   left: 50%;
   border-bottom: none;
   border-right: none;
   transform: rotate(35deg);
 }
-       
-.wave:before{
-  content: '';
+
+.wave:before {
+  content: "";
   position: absolute;
   top: -23px;
   left: 50%;
@@ -189,12 +189,15 @@ figure{
   background-repeat: no-repeat;
   z-index: 16;
 }
-        
-@keyframes wave {
-  0% { transform: rotate(10deg); }
-  100% { transform: rotate(-10deg); }
-}
 
+@keyframes wave {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
 
 /* Typing  */
 @keyframes cursor {
@@ -221,7 +224,7 @@ figure{
   flex-direction: column;
   gap: 20px;
   box-shadow: 0 2px 5px -2px rgba(255, 45, 45, 0.591);
-padding: 15px;
+  padding: 15px;
 }
 
 #about h2::after,
@@ -298,7 +301,7 @@ table td:hover {
   -o-animation: load 2s 0s;
 }
 
-.bar:hover{
+.bar:hover {
   transform: scale(1.1);
 }
 
@@ -386,7 +389,7 @@ table td:hover {
   padding: 10px;
 }
 
-.info:hover{
+.info:hover {
   background-color: gray;
   color: #eee;
 }
@@ -430,7 +433,7 @@ table td:hover {
 }
 
 /* PROJECTS */
-#projects{
+#projects {
   margin-top: 40px;
 }
 
@@ -481,8 +484,6 @@ table td:hover {
   gap: 30px;
 }
 
-
-
 #menu-icon {
   font-size: 25px;
   display: none;
@@ -500,82 +501,80 @@ table td:hover {
 
 /* Responsive */
 
-@media (max-width: 900px){
-  .informations{
+@media (max-width: 900px) {
+  .informations {
     flex-direction: column;
   }
   .container {
     width: 100%;
   }
-  .education{
+  .education {
     width: 100%;
     margin-top: 40px;
   }
 }
 
-@media (max-width: 700px){
-#home{
-  flex-direction: column-reverse;
-  margin: 200px 0 40px;
-}
-.home {
-  max-width: 100%;
-}
-  .informations{
+@media (max-width: 700px) {
+  #home {
+    flex-direction: column-reverse;
+    margin: 200px 0 40px;
+  }
+  .home {
+    max-width: 100%;
+  }
+  .informations {
     flex-direction: column;
   }
-.container {
-  width: 100%;
-}
-.education{
-  width: 100%;
-  margin-top: 40px;
-}
+  .container {
+    width: 100%;
+  }
+  .education {
+    width: 100%;
+    margin-top: 40px;
+  }
 
-.project {
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  gap: 40px;
-}
-.project-image {
-  width: 100%;
-}
+  .project {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+  }
+  .project-image {
+    width: 100%;
+  }
 
-.project-detail {
-  width: 100%;
+  .project-detail {
+    width: 100%;
+  }
 
-}
+  .nav-list {
+    display: none;
+  }
 
-.nav-list{
-  display: none;
-}
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+  }
 
-.nav-list.active {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100px;
-}
+  nav {
+    overflow: visible;
+  }
 
-nav{
-  overflow: visible;
-}
+  .nav-body.active {
+    display: block;
+  }
+  #menu-icon {
+    display: block;
+    color: #333;
+  }
 
-.nav-body.active {
-  display: block;
-}
-#menu-icon {
-  display: block;
-  color: #333;
-}
+  .social-icons {
+    display: none;
+  }
 
-.social-icons{
-  display: none;
-}
-
-#home button{
-  z-index: -1;
-}
-
+  #home button {
+    z-index: -1;
+  }
 }
