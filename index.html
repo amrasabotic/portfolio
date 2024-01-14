@@ -4,229 +4,334 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Amra Sabotic</title>
   </head>
   <body>
-    <!--- Navbar -->
-    <nav>
-      <i class="bx bx-menu" id="menu-icon"></i>
-
-      <div class="nav-list">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-      </div>
-
-      <div class="social-icons">
-        <a href="https://github.com/amrasabotic" target="_blank"
-          ><i class="ri-github-fill"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/amra-%C5%A1aboti%C4%87/"
-          target="_blank"
-        >
-          <i class="ri-linkedin-box-fill"></i
-        ></a>
+    <nav id="desktop-nav">
+      <div class="logo">Amra Sabotic</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
-    <div class="nav-body"></div>
-    <!-- Home Section -->
-    <div class="content">
-      <section id="home">
-        <div class="home">
-          <h2>Hey! My name is <span class="name">Amra Sabotic</span></h2>
-          <h2 class="intro">
-            I'm a passionate
-            <div class="skill">Software Developer</div>
-          </h2>
+    <nav id="hamburger-nav">
+      <div class="logo">Amra Šabotić</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Amra Šabotić</h1>
+        <p class="section__text__p2 skill">Junior Web Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('Resume.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="imgs/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/amra-%C5%A1aboti%C4%87')"
+          />
+          <img
+            src="imgs/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/amrasabotic')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img src="imgs/amra-2.jpg" alt="Profile picture" class="about-pic" />
+        </div> -->
+        <div class="text-container">
           <p>
-            A passionate and dedicated aspiring Software Developer with a strong
-            foundation in web technologies. Currently embarking on my journey as
-            a Junior Developer, I am eager to translate my academic knowledge
-            and hands-on experience into real-world projects.
+            During my academic pursuits, I successfully completed both my
+            Bachelor's and Master's degrees, where I delved into various aspects
+            of web development. My coursework equipped me with a solid
+            understanding of HTML, CSS, and JavaScript, and I had the
+            opportunity to apply these skills in practical projects. I have
+            experience in leveraging modern frameworks and libraries such as
+            React to build dynamic and responsive user interfaces.
           </p>
-          <a href="Resume - Amra Sabotic.pdf"> <button>Resume</button></a>
+          <br />
+          <p>
+            One of my strengths lies in my ability to design and prototype using
+            tools like Figma, ensuring a user-centric and visually appealing end
+            product. I am comfortable working with backend technologies like PHP
+            and MySQL database, contributing to a holistic understanding of web
+            development. While my professional journey is just beginning, my
+            academic background, coupled with my hands-on projects, has provided
+            me with a comprehensive skill set. I am enthusiastic about the
+            continuous learning and growth inherent in the dynamic field of web
+            development.
+          </p>
+          <br />
+          <p>
+            I am now seeking opportunities to contribute my skills to real-world
+            projects, collaborate with experienced professionals, and further
+            enhance my abilities. My goal is to become a valuable asset to a
+            forward-thinking team and contribute to the creation of seamless,
+            user-friendly web experiences.
+          </p>
         </div>
-
-        <figure class="wave">
-          <img src="img/as.jpg" alt="Amra Sabotic" />
-          <figcaption>Amra</figcaption>
-        </figure>
-
-        <!-- <img src="img/amra.png" class="overlay-image"> -->
-      </section>
-
-      <!--- About Me section -->
-      <section id="about">
-        <h2>About Me</h2>
-        <h3>I am Amra, Junior Software Developer</h3>
-        <p>
-          During my academic pursuits, I successfully completed both my
-          Bachelor's and Master's degrees, where I delved into various aspects
-          of web development. My coursework equipped me with a solid
-          understanding of HTML, CSS, and JavaScript, and I had the opportunity
-          to apply these skills in practical projects. I have experience in
-          leveraging modern frameworks and libraries such as React to build
-          dynamic and responsive user interfaces.
-        </p>
-        <p>
-          One of my strengths lies in my ability to design and prototype using
-          tools like Figma, ensuring a user-centric and visually appealing end
-          product. I am comfortable working with backend technologies like PHP
-          and MySQL database, contributing to a holistic understanding of web
-          development.
-        </p>
-
-        <p>
-          While my professional journey is just beginning, my academic
-          background, coupled with my hands-on projects, has provided me with a
-          comprehensive skill set. I am enthusiastic about the continuous
-          learning and growth inherent in the dynamic field of web development.
-        </p>
-        <p>
-          I am now seeking opportunities to contribute my skills to real-world
-          projects, collaborate with experienced professionals, and further
-          enhance my abilities. My goal is to become a valuable asset to a
-          forward-thinking team and contribute to the creation of seamless,
-          user-friendly web experiences.
-        </p>
-        <div class="personal-info">
-          <table>
-            <tr>
-              <td><strong>Birthday:</strong> 16 December 2000</td>
-              <td><strong>Age:</strong> 22</td>
-            </tr>
-            <tr>
-              <td><strong>Email:</strong> amrasabo@gmail.com</td>
-              <td><strong>Phone:</strong> 045/487-680</td>
-            </tr>
-            <tr>
-              <td><strong>Degree:</strong> MSc. Software Engineering</td>
-              <td><strong>City:</strong> Istog</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="informations">
-          <div class="skils" id="skills">
-            <h2 class="skills">Skills</h2>
-
-            <div class="container">
-              <div class="bar front expert" data-skill="HTML5"></div>
-              <div class="bar front advanced" data-skill="CSS3"></div>
-              <div class="bar front advanced" data-skill="Bootstrap"></div>
-              <div class="bar back intermediate" data-skill="JavaScript"></div>
-              <div class="bar back intermediate" data-skill="React"></div>
-              <div class="bar back basic" data-skill="PHP"></div>
-              <div class="bar back basic" data-skill="MySQL"></div>
-              <div class="bar learning" data-skill="Figma"></div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="imgs/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Frontend Development <br />Backend Development</p>
             </div>
-          </div>
-
-          <div class="education">
-            <h2>Education</h2>
-            <div class="timeline">
-              <div class="outer">
-                <div class="card">
-                  <div class="info">
-                    <h3 class="title">South East European University</h3>
-                    <p>2021 - 2023</p>
-                    <p>Faculty of Contemporary Science and Technologies</p>
-                    <p>Computer Science - Software Engineering</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="info">
-                    <h3 class="title">University of Prizren</h3>
-                    <p>2018 - 2021</p>
-                    <p>Faculty of Computer Science</p>
-                    <p>Information Technologies and Telecommunication</p>
-                  </div>
-                </div>
-              </div>
+            <div class="details-container">
+              <img src="imgs/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>MSc. in Software Engineering</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <div class="project-image img1"></div>
-          <div class="project-detail">
-            <a
-              href="img/react.png"
-              target="_blank"
-              ><h2>Makeup web shop</h2></a
-            >
-
-            <p>
-              Virtual web shop for ordering the makeup products of the
-              Maybelline brand. This project is created using HTML, CSS,
-              JavaScript and React. As the source of the products, online API is
-              used.
-            </p>
-            <a href="https://github.com/amrasabotic/online-shop" target="_blank"
-              ><button>Project Code</button></a
-            >
+      </div>
+      <img
+        src="imgs/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
-        <div class="project">
-          <div class="project-image img2"></div>
-          <div class="project-detail">
-            <a
-              href="img/php-app.png"
-              target="_blank"
-              ><h2>Customized gifts shop</h2></a
-            >
-
-            <p>
-              This app is created as a project for the course Web Engineering.
-              Idea was to create a web app as a web shop for making personalized
-              gifts (possible to chose the color, size, zodiac sign...) for
-              various products. Technologies used: HTML, CSS, JavaScript, PHP
-              and MySQL.
-            </p>
-            <a href="https://github.com/amrasabotic/shop" target="_blank"
-              ><button>Project Code</button></a
-            >
+      </div>
+      <img
+        src="imgs/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a
+                href="imgs/react.png"
+                target="_blank"
+                style="text-decoration: none; color: orangered"
+              >
+                <img
+                  src="imgs/react.png"
+                  alt="Makeup Shop"
+                  class="project-img"
+                />
+              </a>
+            </div>
+            <h2 class="experience-sub-title project-title">Makeup Web Shop</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/amrasabotic/online-shop')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container project-art">
+              <a
+                href="imgs/php-app.png"
+                target="_blank"
+                style="text-decoration: none; color: orangered"
+              >
+                <img
+                  src="imgs/php-app.png"
+                  alt="Gift Shop"
+                  class="project-img"
+                />
+              </a>
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Customizable Gifts Shop
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/amrasabotic/shop')"
+              >
+                Github
+              </button>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+      <img
+        src="imgs/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="imgs/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:amrasabo@gmail.com">amrasabo@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="imgs/email.png"
+            alt="Phone"
+            class="icon contact-icon email-icon"
+          />
+          <p><a>045/487-680</a></p>
+        </div>
 
-      <section class="contact"></section>
-    </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 Amra Šabotić. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
-  <script>
-    function getPics() {}
-    const imgs = document.querySelectorAll(".gallery img");
-    const fullPage = document.querySelector("#fullpage");
-
-    imgs.forEach((img) => {
-      img.addEventListener("click", function () {
-        fullPage.style.backgroundImage = "url(" + img.src + ")";
-        fullPage.style.display = "block";
-      });
-    });
-
-    const menuIcon = document.querySelector("#menu-icon");
-    const navbar = document.querySelector(".nav-list");
-    const navbg = document.querySelector(".nav-body");
-    menuIcon.addEventListener("click", () => {
-      menuIcon.classList.toggle("bx-x");
-      navbar.classList.toggle("active");
-      navbg.classList.toggle("active");
-    });
-  </script>
 </html>
