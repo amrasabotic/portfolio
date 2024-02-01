@@ -9,7 +9,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(110deg, rgb(249, 178, 153), white, rgb(252, 162, 129));
+  background: linear-gradient(
+    110deg,
+    rgb(249, 178, 153),
+    white,
+    rgb(252, 162, 129)
+  );
 }
 
 html {
@@ -183,6 +188,10 @@ section {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.section__pic-container.animation {
+  animation-delay: 1.5s;
+}
 .section__pic-container:hover {
   transform: scale(1.2);
   transition-duration: 3s;
@@ -190,6 +199,7 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  animation-delay: 1s;
 }
 
 .section__text p {
@@ -217,6 +227,9 @@ section {
   gap: 1rem;
 }
 
+#socials-container.animation{
+  animation-duration: 2s;
+}
 /* ICONS */
 
 .icon {
@@ -235,6 +248,10 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.btn-container.animation {
+  animation-delay: 1s;
 }
 
 .btn {
@@ -532,7 +549,7 @@ footer p {
   .btn-container {
     flex-wrap: wrap;
   }
-  #about{
+  #about {
     padding-top: 60px;
   }
   .contact-info-container {
@@ -581,9 +598,9 @@ footer p {
   .skill {
     display: inline-block;
   }
-.about-details-container{
-  padding-top: 50px;
-}
+  .about-details-container {
+    padding-top: 50px;
+  }
 }
 
 /* Typing effect */
@@ -619,4 +636,19 @@ footer p {
 
 h3 {
   color: orangered;
+}
+
+/* Animation */
+
+.animation {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
