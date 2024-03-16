@@ -111,7 +111,6 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  
 }
 
 .menu-links a {
@@ -179,25 +178,23 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
-  display: flex;
-  height: 300px;
-  width: 300px;
-  margin: auto 0;
-  border-radius: 50%;
-  background-image: url(imgs/amra-img.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-}
-
 .section__pic-container.animation {
   animation-delay: 1.5s;
 }
 .section__pic-container:hover {
   transform: scale(1.2);
   transition-duration: 3s;
+}
+
+.section__pic-container {
+  width: 400px;
+  height: 450px;
+  background-image: url(imgs/amra-img.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-mask: url(imgs/spl.png);
+  -webkit-mask-size: 460px;
+  -webkit-mask-repeat: no-repeat;
 }
 .section__text {
   align-self: center;
@@ -230,7 +227,7 @@ section {
   gap: 1rem;
 }
 
-#socials-container.animation{
+#socials-container.animation {
   animation-duration: 2s;
 }
 /* ICONS */
@@ -521,12 +518,13 @@ footer p {
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
     margin: 0 auto 2rem;
   }
   .about-containers {
-    margin-top: 0;
+    margin-top: 50px;
+  }
+  #about {
+    padding-top: 140px;
   }
 }
 
@@ -553,7 +551,7 @@ footer p {
     flex-wrap: wrap;
   }
   #about {
-    padding-top: 60px;
+    padding-top: 140px;
   }
   .contact-info-container {
     margin: 0;
@@ -574,10 +572,8 @@ footer p {
     text-align: center;
   }
   .section__pic-container {
-    width: 46vw;
-    height: 46vw;
-    justify-content: center;
-    border-radius: 50%;
+    height: 300px;
+    -webkit-mask-size: 100%;
   }
   .section__text__p2 {
     font-size: 1.25rem;
