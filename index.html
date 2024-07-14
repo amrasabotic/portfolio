@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Amra Sabotic</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Amra Sabotic</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about-me">About me</a>
+        <a href="#contact-me">Contact</a>
+      </nav>
+      <div class="hamburger-menu"  onclick="dropdown()">
+        <i class="fa fa-bars"></i>
+      </div>
+    </header>
+    <main>
+      <div class="dropdown-menu" id="hamburger-menu">
+        <a href="#home" onclick="dropdown()">Home</a>
+        <a href="#projects" onclick="dropdown()">Projects</a>
+        <a href="#about-me" onclick="dropdown()">About me</a>
+        <a href="#contact-me" onclick="dropdown()">Contact</a>
+      </div>
+      <section class="welcome-section" id="home">
+        <div class="welcome-text">
+          <h1>Hi, I am <span>Amra Sabotic</span></h1>
+          <p>
+            A <span>Junior Frontend Developer</span> transforming ideas into
+            stunning digital experiences. Let's create something amazing
+            together!
+          </p>
+        </div>
+        <div class="social-media">
+          <div class="social-icon">
+            <a href="https://github.com/amrasabotic" target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.linkedin.com/in/amra-%C5%A1aboti%C4%87"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="services-title">
+          <h2>Services</h2>
+          <h3>Who <span>am I</span>.</h3>
+        </div>
+        <div class="services-content">
+          <div class="service-item">
+            <div class="service-icon"><i class="fa fa-code"></i></div>
+            <h3>Skills</h3>
+            <div class="line"></div>
+            <p>HTML, CSS, Bootstrap, JavaScript</p>
+          </div>
+          <div class="service-item black">
+            <div class="service-icon"><i class="fa fa-terminal"></i></div>
+            <h3>Familiarity</h3>
+            <div class="line"></div>
+
+            <p>React, PHP, MySQL, ReactNative</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fa fa-graduation-cap"></i></div>
+            <h3>Education</h3>
+            <div class="line"></div>
+            <p>Bachelor: Information Technology and Telecommunication</p>
+            <p>Master: Software Engineering</p>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="projects-title">
+          <h2>Portfolio</h2>
+          <h3>Recent <span> projects</span>.</h3>
+        </div>
+        <div class="projects-content">
+          <div class="projects-item">
+            <div class="project-image">
+              <img src="imgs/react.png" alt="" />
+            </div>
+            <div class="project-description">
+              <h3>Makeup Web Shop</h3>
+              <p>Created using HTML, CSS, JS and React library.</p>
+            </div>
+          </div>
+          <div class="projects-item">
+            <div class="project-image">
+              <img src="imgs/php-app.png" alt="" />
+            </div>
+            <div class="project-description">
+              <h3>Customizable Gifts Shop</h3>
+              <p>Developed in PHP with MySQL database, and Bootstrap.</p>
+            </div>
+          </div>
+          <div class="projects-item">
+            <div class="project-image">
+              <img src="imgs/react.png" alt="" />
+            </div>
+            <div class="project-description">
+              <h3>Youtube Clone</h3>
+              <p>Youtube Clone created using HTML and CSS.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-me-section" id="about-me">
+        <div class="about-me-title">
+          <h2>My bio</h2>
+          <h3>About <span> me</span>.</h3>
+        </div>
+        <div class="about-me-content">
+          <div class="my-image">
+            <div class="img">
+              <img src="imgs/3.JPG" alt="" />
+            </div>
+          </div>
+          <div class="about-me-description">
+            <p>
+              During my academic pursuits, I successfully completed both my
+              Bachelor's and Master's degrees, where I delved into various
+              aspects of software development. My coursework equipped me with a
+              solid understanding of HTML, CSS, and JavaScript, and I had the
+              opportunity to apply these skills in practical projects. I have
+              experience in leveraging modern frameworks and libraries such as
+              React to build dynamic and responsive user interfaces.
+            </p>
+            <p>
+              One of my strengths lies in my ability to design and prototype
+              using tools like Figma, ensuring a user-centric and visually
+              appealing end product. I am comfortable working with backend
+              technologies like PHP and MySQL database, contributing to a
+              holistic understanding of web development.
+            </p>
+            <button onclick="window.open('Amra Sabotic CV.pdf')">Resume</button>
+          </div>
+        </div>
+      </section>
+      <section class="contact-me-section" id="contact-me">
+        <div class="contact-me-title">
+          <h2>Get in touch</h2>
+          <h3>Contact <span>me</span>.</h3>
+          <p>
+            I am currently open to full-time, contract or part-time
+            opportunities in Front End Development.
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-me">
+            <h3>Have any <span> offer </span>for me?</h3>
+            <div class="line"></div>
+            <div class="phone">
+              <i class="fa fa-phone"></i>
+              <p>+383 45 487 680</p>
+            </div>
+            <div class="email">
+              <i class="fa fa-google"></i>
+              <p>amrasabo@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-me-social">
+            <h3>Follow me</h3>
+            <div class="line"></div>
+            <div class="linkedin">
+              <a href="https://www.linkedin.com/in/amra-%C5%A1aboti%C4%87"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/amra-%C5%A1aboti%C4%87">
+                <p>Amra Šabotić</p></a
+              >
+            </div>
+
+            <div class="github">
+              <a href="https://github.com/amrasabotic" target="_blank"
+                ><i class="fa fa-github"></i>
+              </a>
+              <a href="https://github.com/amrasabotic" target="_blank">
+                <p>amrasabotic</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script>
+      function dropdown() {
+        const menu =  document.getElementById("hamburger-menu")
+    
+
+     
+//        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+       // icon.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
