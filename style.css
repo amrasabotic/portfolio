@@ -376,7 +376,7 @@ button:hover{
 /* Media Query */
 
 .dropdown-menu{
-  opacity: 0;
+  visibility: hidden;
   color: white;
   background-color: #262626f2;
   padding: 100px;
@@ -392,7 +392,7 @@ button:hover{
 }
 
 .dropdown-menu.open{
-  opacity: 1;
+  visibility: visible;
   
 }
 
