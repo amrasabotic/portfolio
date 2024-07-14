@@ -442,4 +442,8 @@ button:hover{
   .hamburger-menu{
     display: block;
   }
+
+  .contact-content{
+    grid-template-columns: 1fr;
+  }
 }
